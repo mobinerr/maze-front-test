@@ -67,61 +67,89 @@
   },
 
   "commit_scope": {
-    "enable": true,
-    "custom_scope": true,
-    "initial_value": "config",
+  "enable": true,
+  "custom_scope": true,
+  "initial_value": "config",
 
-    "options": [
-      {
-        "value": "config",
-        "label": "config"
-      },
-      {
-        "value": "deps",
-        "label": "deps"
-      },
-      {
-        "value": "layout",
-        "label": "layout"
-      },
-      {
-        "value": "product",
-        "label": "product"
-      },
-      {
-        "value": "filter",
-        "label": "filter"
-      },
-      {
-        "value": "store",
-        "label": "store"
-      },
-      {
-        "value": "api",
-        "label": "api"
-      },
-      {
-        "value": "ui",
-        "label": "ui"
-      },
-      {
-        "value": "composable",
-        "label": "composable"
-      },
-      {
-        "value": "types",
-        "label": "types"
-      },
-      {
-        "value": "assets",
-        "label": "assets"
-      },
-      {
-        "value": "",
-        "label": "none"
-      }
-    ]
-  },
+  "options": [
+    {
+      "value": "app",
+      "label": "app"
+    },
+    {
+      "value": "config",
+      "label": "config"
+    },
+    {
+      "value": "deps",
+      "label": "deps"
+    },
+    {
+      "value": "layout",
+      "label": "layout"
+    },
+    {
+      "value": "ui",
+      "label": "ui"
+    },
+    {
+      "value": "product",
+      "label": "product"
+    },
+    {
+      "value": "filter",
+      "label": "filter"
+    },
+    {
+      "value": "store",
+      "label": "store"
+    },
+    {
+      "value": "api",
+      "label": "api"
+    },
+    {
+      "value": "service",
+      "label": "service"
+    },
+    {
+      "value": "composable",
+      "label": "composable"
+    },
+    {
+      "value": "plugin",
+      "label": "plugin"
+    },
+    {
+      "value": "assets",
+      "label": "assets"
+    },
+    {
+      "value": "styles",
+      "label": "styles"
+    },
+    {
+      "value": "types",
+      "label": "types"
+    },
+    {
+      "value": "utils",
+      "label": "utils"
+    },
+    {
+      "value": "seo",
+      "label": "seo"
+    },
+    {
+      "value": "docs",
+      "label": "docs"
+    },
+    {
+      "value": "",
+      "label": "none"
+    }
+  ]
+},
 
   "check_ticket": {
     "infer_ticket": false,
