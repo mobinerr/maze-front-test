@@ -1,0 +1,76 @@
+@layer base {
+  :root {
+    /* Typography */
+    --font-sans: 'IranYekanX', Tahoma, sans-serif;
+    /* Radius */
+    --radius: 0.75rem;
+    /* Layout */
+    --layout-header-height: 68px;
+    --layout-header-menu-height: calc(
+      100dvh - var(--layout-header-height)
+    );
+    --layout-header-menu-content-height: calc(
+      100dvh - 4rem
+    );
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+
+    font-weight: normal;
+
+    scroll-behavior: smooth;
+
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
+
+    font-variation-settings: 'dots' 1;
+
+    -webkit-font-variation-settings: 'dots' 1;
+
+    -moz-font-variation-settings: 'dots' 1;
+  }
+
+  html[dir='rtl'] {
+    font-feature-settings: 'ss02';
+  }
+
+  html[dir='ltr'] {
+    font-feature-settings: normal;
+  }
+
+  .fnum {
+    font-feature-settings: 'ss02';
+  }
+
+  .enum {
+    font-feature-settings: normal;
+  }
+
+  html[open-menu='true'],
+  html[open-menu='true'] body {
+    overflow: hidden;
+  }
+
+  body {
+    word-spacing: -0.015rem;
+  }
+
+  button {
+    word-spacing: inherit;
+  }
+
+  input[type='number'] {
+    appearance: textfield;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}

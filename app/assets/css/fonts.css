@@ -1,0 +1,12 @@
+body {
+  border: 10px solid lime !important;
+}
+
+@font-face {
+  font-family: 'IranYekanX';
+  src: url('../fonts/iran-yekan/iran-yekan-xvf.woff2') format('woff2-variations');
+  font-weight: 100 950;
+  font-style: normal;
+  font-display: swap;
+}
+

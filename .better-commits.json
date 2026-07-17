@@ -1,0 +1,181 @@
+{
+  "check_status": true,
+
+  "commit_type": {
+    "enable": true,
+    "initial_value": "feat",
+    "infer_type_from_branch": true,
+    "append_emoji_to_label": false,
+    "append_emoji_to_commit": false,
+
+    "options": [
+      {
+        "value": "feat",
+        "label": "feat",
+        "hint": "Introduce a new feature"
+      },
+      {
+        "value": "fix",
+        "label": "fix",
+        "hint": "Fix a bug"
+      },
+      {
+        "value": "refactor",
+        "label": "refactor",
+        "hint": "Code improvements without behavior changes"
+      },
+      {
+        "value": "style",
+        "label": "style",
+        "hint": "Formatting and styling only"
+      },
+      {
+        "value": "perf",
+        "label": "perf",
+        "hint": "Performance improvements"
+      },
+      {
+        "value": "build",
+        "label": "build",
+        "hint": "Dependencies or build system"
+      },
+      {
+        "value": "docs",
+        "label": "docs",
+        "hint": "Documentation"
+      },
+      {
+        "value": "test",
+        "label": "test",
+        "hint": "Tests"
+      },
+      {
+        "value": "ci",
+        "label": "ci",
+        "hint": "CI/CD"
+      },
+      {
+        "value": "chore",
+        "label": "chore",
+        "hint": "Maintenance"
+      },
+      {
+        "value": "",
+        "label": "none"
+      }
+    ]
+  },
+
+  "commit_scope": {
+    "enable": true,
+    "custom_scope": true,
+    "initial_value": "config",
+
+    "options": [
+      {
+        "value": "config",
+        "label": "config"
+      },
+      {
+        "value": "deps",
+        "label": "deps"
+      },
+      {
+        "value": "layout",
+        "label": "layout"
+      },
+      {
+        "value": "product",
+        "label": "product"
+      },
+      {
+        "value": "filter",
+        "label": "filter"
+      },
+      {
+        "value": "store",
+        "label": "store"
+      },
+      {
+        "value": "api",
+        "label": "api"
+      },
+      {
+        "value": "ui",
+        "label": "ui"
+      },
+      {
+        "value": "composable",
+        "label": "composable"
+      },
+      {
+        "value": "types",
+        "label": "types"
+      },
+      {
+        "value": "assets",
+        "label": "assets"
+      },
+      {
+        "value": "",
+        "label": "none"
+      }
+    ]
+  },
+
+  "check_ticket": {
+    "infer_ticket": false,
+    "confirm_ticket": false,
+    "add_to_title": false
+  },
+
+  "commit_title": {
+    "max_size": 72
+  },
+
+  "commit_body": {
+    "enable": true,
+    "required": false
+  },
+
+  "commit_footer": {
+    "enable": false
+  },
+
+  "breaking_change": {
+    "add_exclamation_to_title": true
+  },
+
+  "confirm_commit": true,
+
+  "print_commit_output": true,
+
+  "branch_pre_commands": [],
+
+  "branch_post_commands": [],
+
+  "worktree_pre_commands": [],
+
+  "worktree_post_commands": [],
+
+  "branch_user": {
+    "enable": false
+  },
+
+  "branch_type": {
+    "enable": true,
+    "separator": "/"
+  },
+
+  "branch_ticket": {
+    "enable": false
+  },
+
+  "branch_description": {
+    "max_length": 60
+  },
+
+  "branch_action_default": "branch",
+
+  "enable_worktrees": false
+}
