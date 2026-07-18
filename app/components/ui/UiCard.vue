@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <div
+  <article
     class="rounded-xl border bg-white shadow-sm transition"
     :class="{
       'p-4': padding,
@@ -19,5 +19,5 @@
     }"
   >
     <slot />
-  </div>
+  </article>
 </template>

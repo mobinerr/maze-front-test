@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <Card hover>
+  <UiCard hover>
     <NuxtImg
       :src="product.image"
       :alt="product.title"
@@ -24,5 +24,5 @@
       {{ product.category }}
     </p>
     <p class="font-bold">${{ product.price }}</p>
-  </Card>
+  </UiCard>
 </template>
