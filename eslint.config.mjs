@@ -1,5 +1,3 @@
-// @ts-check
-
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt({
@@ -9,5 +7,6 @@ export default withNuxt({
     eqeqeq: ['error', 'always'],
     curly: ['error', 'all'],
     'no-unused-vars': 'off',
+    'vue/html-self-closing': 'off',
   },
 });

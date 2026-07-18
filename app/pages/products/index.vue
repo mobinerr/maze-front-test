@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { getProducts } from '@/services';
+  import { getProducts } from '@/services';
 
-const { data: products, pending, error } = await useAsyncData('products', getProducts);
+  useSeoMeta({
+    title: 'صفحه محصولات',
+    description: 'لیست محصولات وبسایت ما',
+  });
+
+  const { data: products, pending, error } = await useAsyncData('products', getProducts);
 </script>
 
 <template>
@@ -14,6 +19,8 @@ const { data: products, pending, error } = await useAsyncData('products', getPro
       {{ error.message }}
     </div>
 
-    <pre v-else>{{ products }}</pre>
+    <div v-else class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <ProductCard v-for="product in products" :key="product.id" :product="product" />
+    </div>
   </div>
 </template>
