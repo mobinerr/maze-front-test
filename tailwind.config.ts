@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 export default <Partial<Config>>{
   content: [
@@ -29,17 +29,62 @@ export default <Partial<Config>>{
     },
 
     borderRadius: {
-      none: '0',
-      sm: 'calc(var(--radius) - 4px)',
-      DEFAULT: 'var(--radius)',
-      md: 'calc(var(--radius) + 2px)',
-      lg: 'calc(var(--radius) + 4px)',
-      full: '9999px',
+      none: '0px',
+      DEFAULT: 'calc(var(--radius))',
+      sm: 'calc(var(--radius) - 0.5rem)',
+      md: 'calc(var(--radius) - 0.25rem)',
+      lg: 'calc(var(--radius) + 0.25rem)',
+      xl: 'calc(var(--radius) + 0.5rem)',
+      full: '100vmax',
     },
 
     extend: {
       colors: {
-        // Compelete Later Based on Figma Design System
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        danger: {
+          DEFAULT: 'hsl(var(--danger))',
+          foreground: 'hsl(var(--danger-foreground))',
+        },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))',
+        },
+        success: {
+          DEFAULT: 'hsl(var(--success))',
+          foreground: 'hsl(var(--success-foreground))',
+        },
+        brand: {
+          DEFAULT: 'hsl(var(--brand))',
+          foreground: 'hsl(var(--brand-foreground))',
+        },
+        neutral: {
+          DEFAULT: 'hsl(var(--neutral))',
+          foreground: 'hsl(var(--neutral-foreground))',
+        },
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        inputFocus: 'hsl(var(--input-focus))',
+        ring: 'hsl(var(--ring))',
+        hover: 'hsl(var(--hover))',
+        footer: 'hsl(var(--footer))',
+        footerRights: 'hsl(var(--hover-rights))',
       },
 
       fontFamily: {
@@ -71,4 +116,4 @@ export default <Partial<Config>>{
   },
 
   plugins: [],
-}
+};
