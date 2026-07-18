@@ -1,4 +1,4 @@
-import SD_LOGO from '@/assets/images/verifications/samandehi.webp';
+import REZI_LOGO from '@/assets/images/verifications/rezi.webp';
 
 const ORGANIZATION = {
   NAME: 'فروشگاه محصولات',
@@ -13,9 +13,9 @@ const ORGANIZATION = {
   COUNTRY_CODE: 'IR',
   ADDRESS: 'تهران، بلوار کاوه',
   SOCIAL_MEDIA: {
-    INSTAGRAM: 'fly_reserve',
-    LINKEDIN: 'flyreserve-com',
-    TELEGRAM: 'flyreserve',
+    INSTAGRAM: 'biomaze',
+    LINKEDIN: 'biomaze',
+    YOUTUBE: '@biomaze',
   },
   VERIFICATION: {
     ENAMAD: {
@@ -28,7 +28,7 @@ const ORGANIZATION = {
       ID: 'samandehi',
       TITLE: 'رسانه دیجیتال',
       URL: `https://logo.samandehi.ir/Verify.aspx?id=#&p=#`,
-      LOGO: SD_LOGO,
+      LOGO: REZI_LOGO,
     },
   },
 } as const;
