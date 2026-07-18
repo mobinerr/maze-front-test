@@ -50,41 +50,18 @@ export default <Partial<Config>>{
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
         },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
+          DEFAULT: 'hsl(var(--muted-background))',
           foreground: 'hsl(var(--muted-foreground))',
         },
-        danger: {
-          DEFAULT: 'hsl(var(--danger))',
-          foreground: 'hsl(var(--danger-foreground))',
+        text: {
+          DEFAULT: 'hsl(var(--text))',
+          muted: 'hsl(var(--text-muted))',
         },
-        warning: {
-          DEFAULT: 'hsl(var(--warning))',
-          foreground: 'hsl(var(--warning-foreground))',
-        },
-        success: {
-          DEFAULT: 'hsl(var(--success))',
-          foreground: 'hsl(var(--success-foreground))',
-        },
-        brand: {
-          DEFAULT: 'hsl(var(--brand))',
-          foreground: 'hsl(var(--brand-foreground))',
-        },
-        neutral: {
-          DEFAULT: 'hsl(var(--neutral))',
-          foreground: 'hsl(var(--neutral-foreground))',
-        },
+        footer: 'hsl(var(--footer))',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         inputFocus: 'hsl(var(--input-focus))',
-        ring: 'hsl(var(--ring))',
-        hover: 'hsl(var(--hover))',
-        footer: 'hsl(var(--footer))',
-        footerRights: 'hsl(var(--hover-rights))',
       },
 
       fontFamily: {
@@ -111,6 +88,44 @@ export default <Partial<Config>>{
       boxShadow: {
         card: '0 6px 24px rgba(15,23,42,.08)',
         dropdown: '0 8px 30px rgba(15,23,42,.12)',
+      },
+
+      keyframes: {
+        'accordion-down': {
+          from: {
+            height: '0',
+          },
+          to: {
+            height: 'var(--reka-accordion-content-height)',
+          },
+        },
+
+        'accordion-up': {
+          from: {
+            height: 'var(--reka-accordion-content-height)',
+          },
+          to: {
+            height: '0',
+          },
+        },
+
+        'caret-blink': {
+          '0%,70%,100%': {
+            opacity: '1',
+          },
+
+          '20%,50%': {
+            opacity: '0',
+          },
+        },
+      },
+
+      animation: {
+        'accordion-down': 'accordion-down 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+
+        'accordion-up': 'accordion-up 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+
+        'caret-blink': 'caret-blink 1.25s ease-out infinite',
       },
     },
   },

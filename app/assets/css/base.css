@@ -6,6 +6,10 @@
     --card-foreground: 213 78% 18%;
     --primary: 338 100% 44%;
     --primary-foreground: 0 0% 100%;
+    --muted-background: 216 37% 94%;
+    --footer: 216 40% 98%;
+    --text: 212 31% 27%;
+    --text-muted: 212 21% 50%;
     /* Typography */
     --font-sans: 'IranYekanX', Tahoma, sans-serif;
     /* Radius */
