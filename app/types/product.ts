@@ -1,3 +1,8 @@
+type ProductRatingType = {
+  rate: number;
+  count: number;
+};
+
 type ProductType = {
   id: number;
   title: string;
@@ -5,6 +10,7 @@ type ProductType = {
   price: number;
   category: string;
   image: string;
+  rating: ProductRatingType;
 };
 
 type ProductResponseType = ProductType[];

@@ -1,6 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-	<NuxtRouteAnnouncer />
-	<NuxtPage />
+  <NuxtRouteAnnouncer />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

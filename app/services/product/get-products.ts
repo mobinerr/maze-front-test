@@ -1,9 +1,9 @@
-import { Fetch } from '@/api';
+import { Fetch, PRODUCT_ENDPOINTS } from '@/api';
 import type { ProductResponseType } from '@/types';
 
 const getProducts = async (): Promise<ProductResponseType> => {
   return Fetch<ProductResponseType>({
-    url: '/products',
+    url: PRODUCT_ENDPOINTS.LIST,
   });
 };
 
