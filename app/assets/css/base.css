@@ -1,5 +1,11 @@
 @layer base {
   :root {
+    --background: 216 37% 94%;
+    --foreground: 213 78% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 213 78% 18%;
+    --primary: 338 100% 44%;
+    --primary-foreground: 0 0% 100%;
     /* Typography */
     --font-sans: 'IranYekanX', Tahoma, sans-serif;
     /* Radius */
