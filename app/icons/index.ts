@@ -5,4 +5,8 @@ export {
   PhBookOpenText,
   PhChatDots,
   PhList,
+  PhCaretDown,
+  PhInstagramLogo,
+  PhYoutubeLogo,
+  PhLinkedinLogo,
 } from '@phosphor-icons/vue';
