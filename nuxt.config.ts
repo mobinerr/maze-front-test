@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/image', '@nuxtjs/tailwindcss', '@nuxt/eslint', '@pinia/nuxt', '@vueuse/nuxt'],
+  modules: ['@nuxt/image', '@nuxtjs/tailwindcss', '@nuxt/eslint', '@vueuse/nuxt'],
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
