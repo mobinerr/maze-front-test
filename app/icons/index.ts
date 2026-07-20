@@ -16,4 +16,6 @@ export {
   PhSortAscending,
   PhStar,
   PhCaretLeft,
+  PhHouse,
+  PhMagnifyingGlassPlus,
 } from '@phosphor-icons/vue';
