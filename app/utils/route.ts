@@ -5,8 +5,8 @@ const getPositiveRouteParam = (value: unknown, resource = 'Resource'): number =>
 
   if (!Number.isInteger(id) || id <= 0) {
     throw createError({
-      statusCode: 404,
-      statusMessage: `${resource} not found`,
+      status: 404,
+      message: `${resource} not found`,
     });
   }
 

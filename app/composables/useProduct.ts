@@ -4,7 +4,7 @@ import { createBreadcrumb } from '@/utils';
 import type { BreadcrumbItem, ProductDetailResponseType, ProductSpecification } from '@/types';
 
 export const useProduct = (product: Ref<ProductDetailResponseType | null | undefined>) => {
-  const hasProduct = computed(() => !!product.value);
+  const hasProduct = computed(() => Boolean(product.value?.id));
 
   const breadcrumbItems = computed<BreadcrumbItem[]>(() =>
     createBreadcrumb(
