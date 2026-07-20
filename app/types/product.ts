@@ -13,6 +13,37 @@ type ProductType = {
   rating: ProductRatingType;
 };
 
+export type ProductSortValue = 'price-asc' | 'price-desc' | 'rating-desc' | 'rating-asc';
+
+type ProductSortOption = {
+  value: ProductSortValue;
+  label: string;
+};
+
+type ProductCategory = {
+  value: string;
+  count: number;
+};
+
+type ProductFilters = {
+  search: string;
+  sort: ProductSortValue;
+  categories: string[];
+};
+
+type AppliedProductFilter = {
+  id: string;
+  label: string;
+  type: 'search' | 'category' | 'sort';
+};
+
 type ProductResponseType = ProductType[];
 
-export type { ProductType, ProductResponseType };
+export type {
+  AppliedProductFilter,
+  ProductType,
+  ProductResponseType,
+  ProductSortOption,
+  ProductCategory,
+  ProductFilters,
+};
