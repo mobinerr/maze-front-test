@@ -1,28 +1,42 @@
 <script setup lang="ts">
   import type { ProductType } from '@/types';
+  import { PhCaretLeft, PhStar } from '@/icons';
+  import { PRODUCT_ROUTES } from '@/constants';
 
-  type Props = {
+  defineProps<{
     product: ProductType;
-  };
-
-  defineProps<Props>();
+  }>();
 </script>
 
 <template>
-  <UiCard hover>
+  <UiCard hover class="grid gap-2">
     <NuxtImg
       :src="product.image"
       :alt="product.title"
-      width="300"
-      height="300"
-      class="mx-auto mb-4 h-48 object-contain"
+      class="w-full h-44 mx-auto rounded object-contain mb-2"
     />
-    <h2 class="mb-2 line-clamp-2 font-semibold">
+    <div class="w-full flex items-center justify-between">
+      <p class="text-sm text-text-muted leading-6">
+        {{ product.category }}
+      </p>
+      <div class="h-6 bg-muted rounded-full px-2 flex items-center gap-1">
+        <span class="text-xs font-bold text-text leading-6">{{ product.rating.rate }}</span>
+        <PhStar :size="16" weight="fill" class="text-warning" />
+      </div>
+    </div>
+    <h2 class="line-clamp-1 font-semibold">
       {{ product.title }}
     </h2>
-    <p class="mb-3 text-sm text-gray-500">
-      {{ product.category }}
-    </p>
-    <p class="font-bold">${{ product.price }}</p>
+    <div class="flex items-center justify-end">
+      <span class="font-bold enum">${{ product.price }}</span>
+    </div>
+    <CommonAppLink
+      :to="PRODUCT_ROUTES.DETAILS(product.id)"
+      :aria-label="`مشاهده ${product.title}`"
+      class="w-full flex items-center justify-center gap-2 text-primary font-semibold text-sm h-10 border border-border rounded transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
+    >
+      <span>مشاهده و جزئیات</span>
+      <PhCaretLeft :size="16" weight="bold" />
+    </CommonAppLink>
   </UiCard>
 </template>

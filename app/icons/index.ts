@@ -11,6 +11,9 @@ export {
   PhLinkedinLogo,
   PhMagnifyingGlass,
   PhX,
+  PhWarningCircle,
   PhCheck,
   PhSortAscending,
+  PhStar,
+  PhCaretLeft,
 } from '@phosphor-icons/vue';

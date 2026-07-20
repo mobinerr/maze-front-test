@@ -59,6 +59,7 @@ export default <Partial<Config>>{
           muted: 'hsl(var(--text-muted))',
         },
         footer: 'hsl(var(--footer))',
+        warning: 'hsl(var(--warning))',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         inputFocus: 'hsl(var(--input-focus))',

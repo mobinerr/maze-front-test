@@ -39,8 +39,11 @@ type AppliedProductFilter = {
 
 type ProductResponseType = ProductType[];
 
+type ProductDetailResponseType = ProductType;
+
 export type {
   AppliedProductFilter,
+  ProductDetailResponseType,
   ProductType,
   ProductResponseType,
   ProductSortOption,
