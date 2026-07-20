@@ -37,11 +37,18 @@ type AppliedProductFilter = {
   type: 'search' | 'category' | 'sort';
 };
 
+type ProductSpecification = {
+  label: string;
+  value: string | number;
+  multiline?: boolean;
+};
+
 type ProductResponseType = ProductType[];
 
 type ProductDetailResponseType = ProductType;
 
 export type {
+  ProductSpecification,
   AppliedProductFilter,
   ProductDetailResponseType,
   ProductType,
