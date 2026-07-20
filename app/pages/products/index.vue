@@ -1,9 +1,10 @@
 <script setup lang="ts">
   import { ref } from 'vue';
 
-  import { useProductCategories, useProductFilters } from '@/composables';
+  import { DEFAULT_PRODUCT_FILTERS } from '@/constants';
   import { getProducts } from '@/services';
   import type { ProductFilters } from '@/types';
+  import { useProductFilters, useProductCategories, useProductQuery } from '@/composables';
 
   useSeoMeta({
     title: 'صفحه محصولات',
@@ -12,11 +13,14 @@
 
   const { data: products, pending, error } = await useAsyncData('products', getProducts);
 
-  const productFilters = ref<ProductFilters>({
-    search: '',
-    sort: 'price-asc',
-    categories: [],
-  });
+  const productFilters = ref<ProductFilters>(structuredClone(DEFAULT_PRODUCT_FILTERS));
+
+  const { syncFiltersFromQuery, watchProductFilters, watchRouteQuery } =
+    useProductQuery(productFilters);
+
+  syncFiltersFromQuery();
+  watchProductFilters();
+  watchRouteQuery();
 
   const { categories } = useProductCategories(products);
 
