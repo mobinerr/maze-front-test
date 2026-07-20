@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import type { ProductType } from '@/types';
-  import { PhCaretLeft, PhStar } from '@/icons';
+  import { PhCaretLeft } from '@/icons';
   import { PRODUCT_ROUTES } from '@/constants';
 
   defineProps<{
@@ -19,10 +19,7 @@
       <p class="text-sm text-text-muted leading-6">
         {{ product.category }}
       </p>
-      <div class="h-6 bg-muted rounded-full px-2 flex items-center gap-1">
-        <span class="text-xs font-bold text-text leading-6">{{ product.rating.rate }}</span>
-        <PhStar :size="16" weight="fill" class="text-warning" />
-      </div>
+      <UiRating :rate="product.rating.rate" />
     </div>
     <h2 class="line-clamp-1 font-semibold">
       {{ product.title }}
