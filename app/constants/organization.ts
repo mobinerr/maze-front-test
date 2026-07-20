@@ -1,9 +1,9 @@
 import REZI_LOGO from '@/assets/images/verifications/rezi.webp';
 
 const ORGANIZATION = {
-  NAME: 'فروشگاه محصولات',
+  NAME: 'فروشگاهِ من',
   ALT_NAME: 'Product Store',
-  DESCRIPTION: 'فروشگاه | تجربه ی خریدی دلنشین',
+  DESCRIPTION: 'فروشگاهِ من | تجربه ی خریدی دلنشین',
   LOGO: '/assets/images/logo.png',
   PHONE: '+989180856098',
   FORMATTED_PHONE: '09180856098',

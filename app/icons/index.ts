@@ -9,4 +9,8 @@ export {
   PhInstagramLogo,
   PhYoutubeLogo,
   PhLinkedinLogo,
+  PhMagnifyingGlass,
+  PhX,
+  PhCheck,
+  PhSortAscending,
 } from '@phosphor-icons/vue';
