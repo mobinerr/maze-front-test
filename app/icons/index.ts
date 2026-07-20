@@ -18,4 +18,5 @@ export {
   PhCaretLeft,
   PhHouse,
   PhMagnifyingGlassPlus,
+  PhSlidersHorizontal,
 } from '@phosphor-icons/vue';

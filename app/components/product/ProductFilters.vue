@@ -11,9 +11,9 @@
 </script>
 
 <template>
-  <aside class="hidden w-[266px] shrink-0 lg:block">
-    <div class="sticky top-6">
-      <ProductFilters v-model="filters" :categories="categories" />
-    </div>
-  </aside>
+  <div class="flex flex-col gap-4">
+    <ProductSearch v-model="filters.search" />
+    <ProductSort v-model="filters.sort" />
+    <ProductCategory v-model="filters.categories" :categories="categories" />
+  </div>
 </template>

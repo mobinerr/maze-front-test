@@ -25,6 +25,8 @@
   const { categories } = useProductCategories(products);
 
   const { filteredProducts } = useProductFilters(products, productFilters);
+
+  const isFiltersDrawerOpen = ref(false);
 </script>
 
 <template>
@@ -35,6 +37,14 @@
       <ProductSidebar v-model="productFilters" :categories="categories" />
 
       <div class="flex w-full flex-1 flex-col gap-y-6 overflow-x-hidden">
+        <ProductFiltersTrigger @click="isFiltersDrawerOpen = true" />
+
+        <ProductFiltersDrawer
+          v-model:open="isFiltersDrawerOpen"
+          v-model="productFilters"
+          :categories="categories"
+        />
+
         <ProductAppliedFilters v-model="productFilters" />
 
         <ProductSkeleton v-if="pending" />
