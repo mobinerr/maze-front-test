@@ -1,23 +1,35 @@
 <script setup lang="ts">
+  import { cn } from '@/utils/cn';
+
+  defineOptions({
+    inheritAttrs: false,
+  });
+
   type Props = {
     padding?: boolean;
     hover?: boolean;
+    class?: string;
   };
 
-  withDefaults(defineProps<Props>(), {
+  const props = withDefaults(defineProps<Props>(), {
     padding: true,
     hover: false,
+    class: '',
   });
 </script>
 
 <template>
-  <article
-    class="rounded-xl border bg-white shadow-sm transition"
-    :class="{
-      'p-4': padding,
-      'hover:shadow-md': hover,
-    }"
+  <div
+    v-bind="$attrs"
+    :class="
+      cn(
+        'rounded-xl border bg-white shadow-sm transition',
+        props.padding && 'p-4',
+        props.hover && 'hover:shadow-md',
+        props.class,
+      )
+    "
   >
     <slot />
-  </article>
+  </div>
 </template>
