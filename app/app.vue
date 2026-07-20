@@ -8,6 +8,7 @@
 </script>
 
 <template>
+  <NuxtLoadingIndicator color="hsl(var(--primary))" :height="3" :throttle="0" :duration="1500" />
   <NuxtRouteAnnouncer />
   <NuxtLayout>
     <NuxtPage />
