@@ -1,10 +1,11 @@
 ## Preview
 
 ![Application Preview](./README-assets/preview.png)
+![Application Preview](/public/README-assets/preview.png)
 
 # Maze Frontend Challenge
 
-Frontend technical challenge implementation for **MAZ (HeroTech)** built with **Nuxt 4**, **Vue 3**, **TypeScript**, and **Tailwind CSS**.
+Frontend technical challenge implementation for **MAZE (HeroTech)** built with **Nuxt 4**, **Vue 3**, **TypeScript**, and **Tailwind CSS**.
 
 The project consumes data from the **Fake Store API** and focuses on clean architecture, SSR, reusable components, and maintainable code.
 
