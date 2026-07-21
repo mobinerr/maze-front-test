@@ -1,75 +1,192 @@
-# Nuxt Minimal Starter
+## Preview
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Application Preview](./README-assets/preview.png)
 
-## Setup
+# Maze Frontend Challenge
 
-Make sure to install dependencies:
+Frontend technical challenge implementation for **MAZ (HeroTech)** built with **Nuxt 4**, **Vue 3**, **TypeScript**, and **Tailwind CSS**.
+
+The project consumes data from the **Fake Store API** and focuses on clean architecture, SSR, reusable components, and maintainable code.
+
+---
+
+## Features
+
+### Product List
+
+- Display product list
+- Product search
+- Category filtering
+- Product sorting
+- Applied filters
+- URL query synchronization
+- Responsive filters (Sidebar / Drawer)
+- Skeleton loading
+- Empty state
+- Error state
+- SEO metadata
+
+### Product Details
+
+- Dynamic product page
+- Breadcrumb navigation
+- Product specifications
+- Image preview dialog
+- Dynamic SEO metadata
+- Invalid route handling (404)
+
+---
+
+## Tech Stack
+
+- Nuxt 4
+- Vue 3
+- TypeScript
+- Tailwind CSS
+- Reka UI
+- Vaul Vue
+- VueUse
+- Nuxt Image
+- Phosphor Icons
+
+---
+
+## Architecture
+
+The project follows a layered architecture to keep responsibilities separated and make future development easier.
+
+```text
+Types
+    ↓
+Constants
+    ↓
+Services
+    ↓
+Composables
+    ↓
+Components
+    ↓
+Pages
+```
+
+### Responsibilities
+
+- **Types** define shared application models.
+- **Constants** contain static configuration and defaults.
+- **Services** are responsible for API communication.
+- **Composables** contain business logic and reusable state.
+- **Components** are responsible for presentation.
+- **Pages** only orchestrate data flow.
+
+---
+
+## Project Structure
+
+```text
+app
+├── api
+├── assets
+├── components
+├── composables
+├── constants
+├── icons
+├── layouts
+├── pages
+├── services
+├── types
+└── utils
+```
+
+---
+
+## Key Implementation Decisions
+
+### Server-side Data Fetching
+
+Product data is fetched using `useAsyncData`, allowing pages to be rendered on the server for improved SEO and faster first paint.
+
+### Service Layer
+
+API communication is isolated inside the service layer.
+
+Components never communicate directly with external APIs.
+
+### Composables
+
+Filtering, query synchronization, breadcrumb generation, and product-specific logic are extracted into composables to keep pages lightweight.
+
+### URL Synchronization
+
+Filter state is synchronized with route query parameters, allowing bookmarking and sharing filtered results.
+
+### Reusable UI Components
+
+Common UI elements such as Dialog, Drawer, Rating, Accordion, Checkbox, and Radio Group are implemented as reusable components.
+
+### Error Handling
+
+The application handles:
+
+- Invalid route parameters
+- Non-existing products
+- API errors
+- Global error page (`error.vue`)
+
+---
+
+## Getting Started
+
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run development server:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Create production build:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+
+## Available Scripts
+
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run generate
+```
+
+---
+
+## API
+
+This project uses the Fake Store API:
+
+https://fakestoreapi.com/docs
+
+---
+
+## Repository
+
+https://github.com/mobinerr/maze-front-test
+
+---
+
+## Author
+
+**Mobin Shokri**
