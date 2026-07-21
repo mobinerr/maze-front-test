@@ -1,7 +1,6 @@
 ## Preview
 
-![Application Preview](./README-assets/preview.png)
-![Application Preview](/public/README-assets/preview.png)
+![Application Preview](/public/preview.png)
 
 # Maze Frontend Challenge
 
